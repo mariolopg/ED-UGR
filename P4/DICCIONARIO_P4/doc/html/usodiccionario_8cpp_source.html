@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TDA Imagen: Fichero Fuente src/usodiccionario.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TDA Imagen
+   &#160;<span id="projectnumber">0</span>
+   </div>
+   <div id="projectbrief">Implementacion del TDA Imagen</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">usodiccionario.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;diccionario.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">/*Operator&lt;&lt;. Obsérvese el uso de 2 tipos diferentes de iteradores. Uno sobre </span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">listas de listas y otro sobre listas</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;ostream &amp; operator&lt;&lt;(ostream &amp; os, const Diccionario&lt;string,string&gt; &amp; D){</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;      </div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;      <a class="code" href="classDiccionario_1_1const__iterator.html">Diccionario&lt;string,string&gt;::const_iterator</a> it;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;      </div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      <span class="keywordflow">for</span> (it=D.cbegin(); it!=D.cend(); ++it){</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;      </div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            list&lt;string&gt;::const_iterator it_s;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            </div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            os&lt;&lt;endl&lt;&lt;(*it).clave&lt;&lt;endl&lt;&lt;<span class="stringliteral">&quot; informacion asociada:&quot;</span>&lt;&lt;endl;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">for</span> (it_s=(*it).info_asoci.begin();it_s!=(*it).info_asoci.end();++it_s){</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                  os&lt;&lt;(*it_s)&lt;&lt;endl;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            }</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            os&lt;&lt;<span class="stringliteral">&quot;**************************************&quot;</span>&lt;&lt;endl;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      }</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      </div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <span class="keywordflow">return</span> os;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/*Operator &gt;&gt;. El formato de la entrada es:</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     numero de claves en la primera linea</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">     clave-iésima retorno de carro</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">     numero de informaciones asocimakadas en la siguiente linea</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">     y en cada linea obviamente la informacion asociada</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;istream &amp; operator &gt;&gt;(istream &amp; is,<a class="code" href="classDiccionario.html">Diccionario&lt;string,string&gt;</a> &amp;D){</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordtype">int</span> np;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      is&gt;&gt;np;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      is.ignore();<span class="comment">//quitamos \n</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="classDiccionario.html">Diccionario&lt;string,string&gt;</a> Daux;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;np; i++){</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordtype">string</span> clave;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            getline(is,clave); </div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            </div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordtype">int</span> ns;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            is&gt;&gt;ns; </div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            is.ignore();<span class="comment">//quitamos \n</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            list&lt;string&gt;laux;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0;j&lt;ns; j++){</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                  <span class="keywordtype">string</span> s;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                  getline(is,s);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                  </div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                  <span class="comment">// cout&lt;&lt;&quot;Significado leido &quot;&lt;&lt;s&lt;&lt;endl;</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                  laux.insert(laux.end(),s);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            Daux.Insertar(clave,laux);            </div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            </div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      }</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      D=Daux;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">return</span> is;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">/*Recorre la lista de información asociada a una clave y la imprime*/</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> EscribeSigni(<span class="keyword">const</span> list&lt;string&gt;&amp;l){         </div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      list&lt;string&gt;::const_iterator it_s;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      </div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">for</span> (it_s=l.begin();it_s!=l.end();++it_s){</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            cout&lt;&lt;*it_s&lt;&lt;endl;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      }</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}   </div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">/*Lee un diccioario e imprime datos asociados a una clave. </span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">Hay un fichero ejemplo de prueba: data.txt.Para lanzar el programa con ese fichero se escribe: </span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">                  ./usodiccionario &lt; data.txt </span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keywordtype">int</span> main(){</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; <a class="code" href="classDiccionario.html">Diccionario&lt;string,string&gt;</a> D;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;cin&gt;&gt;D;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;cout&lt;&lt;D;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">string</span> a;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;cout&lt;&lt;<span class="stringliteral">&quot;Introduce una palabra&quot;</span>&lt;&lt;endl;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;cin&gt;&gt;a;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;list&lt;string&gt;l=D.getInfo_Asoc(a);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordflow">if</span> (l.size()&gt;0)</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      EscribeSigni(l);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="ttc" id="classDiccionario_1_1const__iterator_html"><div class="ttname"><a href="classDiccionario_1_1const__iterator.html">Diccionario::const_iterator</a></div><div class="ttdef"><b>Definition:</b> <a href="diccionario_8h_source.html#l00117">diccionario.h:117</a></div></div>
+<div class="ttc" id="classDiccionario_html"><div class="ttname"><a href="classDiccionario.html">Diccionario</a></div><div class="ttdef"><b>Definition:</b> <a href="diccionario_8h_source.html#l00039">diccionario.h:39</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

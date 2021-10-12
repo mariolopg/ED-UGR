@@ -1,0 +1,191 @@
+\hypertarget{classGuia__Tlf}{}\section{Referencia de la Clase Guia\+\_\+\+Tlf}
+\label{classGuia__Tlf}\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classGuia__Tlf_1_1const__iterator}{const\+\_\+iterator}
+\item 
+class \hyperlink{classGuia__Tlf_1_1iterator}{iterator}
+\end{DoxyCompactItemize}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+string \& \hyperlink{classGuia__Tlf_ab2c734a7f3f3cd63ad95f525502474ea}{operator\mbox{[}$\,$\mbox{]}} (const string \&nombre)
+\begin{DoxyCompactList}\small\item\em Acceso a un elemento. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGuia__Tlf_a18593e3cf273db1a540cba69f87fd637}\label{classGuia__Tlf_a18593e3cf273db1a540cba69f87fd637}} 
+string {\bfseries gettelefono} (const string \&nombre)
+\item 
+pair$<$ map$<$ string, string $>$\+::\hyperlink{classGuia__Tlf_1_1iterator}{iterator}, bool $>$ \hyperlink{classGuia__Tlf_add78a6fe5e8090ad6f71bbb160b70f77}{insert} (string nombre, string tlf)
+\begin{DoxyCompactList}\small\item\em Insert un nuevo telefono. \end{DoxyCompactList}\item 
+pair$<$ map$<$ string, string $>$\+::\hyperlink{classGuia__Tlf_1_1iterator}{iterator}, bool $>$ \hyperlink{classGuia__Tlf_a4c4e4cc9540896434edd915296e56c87}{insert} (pair$<$ string, string $>$ p)
+\begin{DoxyCompactList}\small\item\em Insert un nuevo telefono. \end{DoxyCompactList}\item 
+void \hyperlink{classGuia__Tlf_a57e32bbc9e76567d22e5275d4d2a6515}{borrar} (const string \&nombre)
+\begin{DoxyCompactList}\small\item\em Borrar un telefono. \end{DoxyCompactList}\item 
+void \hyperlink{classGuia__Tlf_af8adac24fd35985b9016a4a38cca60f4}{borrar} (const string \&nombre, const string \&tlf)
+\begin{DoxyCompactList}\small\item\em Borrar un telefono. \end{DoxyCompactList}\item 
+int \hyperlink{classGuia__Tlf_a727ab46d490b4196a71f623644906a81}{size} () const
+\begin{DoxyCompactList}\small\item\em Numero de telefonos. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classGuia__Tlf_aa63213524c6339ea89baae2b5d2ebb69}{contabiliza} (const string \&nombre)
+\begin{DoxyCompactList}\small\item\em Contabiliza cuantos telefonos tenemos asociados a un nombre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGuia__Tlf_a36ac970ece51a62763bb3898159d0047}\label{classGuia__Tlf_a36ac970ece51a62763bb3898159d0047}} 
+void \hyperlink{classGuia__Tlf_a36ac970ece51a62763bb3898159d0047}{clear} ()
+\begin{DoxyCompactList}\small\item\em Limpia la guia. \end{DoxyCompactList}\item 
+\hyperlink{classGuia__Tlf}{Guia\+\_\+\+Tlf} \hyperlink{classGuia__Tlf_a3e0b08a1985d3c72853690730319172f}{operator+} (const \hyperlink{classGuia__Tlf}{Guia\+\_\+\+Tlf} \&g)
+\begin{DoxyCompactList}\small\item\em Union de guias de telefonos. \end{DoxyCompactList}\item 
+\hyperlink{classGuia__Tlf}{Guia\+\_\+\+Tlf} \hyperlink{classGuia__Tlf_ac381d53f275ce769830e07fbc56902b0}{operator-\/} (const \hyperlink{classGuia__Tlf}{Guia\+\_\+\+Tlf} \&g)
+\begin{DoxyCompactList}\small\item\em Diferencia de guias de telefonos. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGuia__Tlf_a2a325e84f226b0c9776115da309493ba}\label{classGuia__Tlf_a2a325e84f226b0c9776115da309493ba}} 
+\hyperlink{classGuia__Tlf_1_1iterator}{iterator} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classGuia__Tlf_a8634ac1042bfe924e59db3ed44152a70}\label{classGuia__Tlf_a8634ac1042bfe924e59db3ed44152a70}} 
+\hyperlink{classGuia__Tlf_1_1iterator}{iterator} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classGuia__Tlf_a9415a504894532f25ffe8e74167f6692}\label{classGuia__Tlf_a9415a504894532f25ffe8e74167f6692}} 
+\hyperlink{classGuia__Tlf_1_1const__iterator}{const\+\_\+iterator} {\bfseries cbegin} () const
+\item 
+\mbox{\Hypertarget{classGuia__Tlf_ac2b7430eafae48fb68569c23b54d47ec}\label{classGuia__Tlf_ac2b7430eafae48fb68569c23b54d47ec}} 
+\hyperlink{classGuia__Tlf_1_1const__iterator}{const\+\_\+iterator} {\bfseries cend} () const
+\item 
+\hyperlink{classGuia__Tlf}{Guia\+\_\+\+Tlf} \hyperlink{classGuia__Tlf_ab6b614acc6421415f8ac37b473855243}{Buscar\+\_\+contactos\+\_\+por\+\_\+debajo\+\_\+nombre} (string n1)
+\begin{DoxyCompactList}\small\item\em Método busca los contactos por debajo de un nombre dado (inclusive) \end{DoxyCompactList}\item 
+\hyperlink{classGuia__Tlf}{Guia\+\_\+\+Tlf} \hyperlink{classGuia__Tlf_af47c1b9b812dc15f138989472e430515}{Buscar\+\_\+contactos\+\_\+por\+\_\+letra} (char letra)
+\begin{DoxyCompactList}\small\item\em Método que devuelve una guia de teléfonos con los contactos que empiezan por la misma letra. \end{DoxyCompactList}\item 
+string \hyperlink{classGuia__Tlf_ae01b5aba74b7ed5b05f9cb200f134b08}{get\+Nombre} (const string \&tlf)
+\begin{DoxyCompactList}\small\item\em Método que devuelve el nombre de un numero de tlf. \end{DoxyCompactList}\item 
+int \hyperlink{classGuia__Tlf_a43c5d8b5c8e1dbb7add384222995cdaf}{numero\+Nombres\+Iguales} (const string \&nombre, const \hyperlink{classGuia__Tlf}{Guia\+\_\+\+Tlf} \&guia2)
+\begin{DoxyCompactList}\small\item\em Método que cuenta cuantos contactos hay con un nombre concreto en dos guias distintas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classGuia__Tlf_a73eb02557f3118999710c66aa9ecf309}{operator$<$$<$} (ostream \&os, \hyperlink{classGuia__Tlf}{Guia\+\_\+\+Tlf} \&g)
+\begin{DoxyCompactList}\small\item\em Escritura de la guia de telefonos. \end{DoxyCompactList}\item 
+istream \& \hyperlink{classGuia__Tlf_ac15a5b0c2eb7d5b1843f11beb492495e}{operator$>$$>$} (istream \&is, \hyperlink{classGuia__Tlf}{Guia\+\_\+\+Tlf} \&g)
+\begin{DoxyCompactList}\small\item\em Lectura de la guia de telefonos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+Definición en la línea 9 del archivo guiatlf.\+h.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classGuia__Tlf_a57e32bbc9e76567d22e5275d4d2a6515}\label{classGuia__Tlf_a57e32bbc9e76567d22e5275d4d2a6515}} 
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!borrar@{borrar}}
+\index{borrar@{borrar}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection{\texorpdfstring{borrar()}{borrar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Guia\+\_\+\+Tlf\+::borrar (\begin{DoxyParamCaption}\item[{const string \&}]{nombre }\end{DoxyParamCaption})}
+
+
+
+Borrar un telefono. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre} & nombre que se quiere borrar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+\+: en caso de que fuese un multimap borraria todos con ese nombre 
+\end{DoxyNote}
+
+
+Definición en la línea 63 del archivo guiatlf.\+cpp.
+
+
+\begin{DoxyCode}
+64 \{
+65     map<string, string>::iterator itlow = datos.lower\_bound(nombre);   \textcolor{comment}{//el primero que tiene dicho nombre}
+66     map<string, string>::iterator itupper = datos.upper\_bound(nombre); \textcolor{comment}{//el primero que ya no tiene dicho
+       nombre}
+67     datos.erase(itlow, itupper);                                       \textcolor{comment}{//borramos todos aquellos que tiene
+       dicho nombre}
+68 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classGuia__Tlf_af8adac24fd35985b9016a4a38cca60f4}\label{classGuia__Tlf_af8adac24fd35985b9016a4a38cca60f4}} 
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!borrar@{borrar}}
+\index{borrar@{borrar}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection{\texorpdfstring{borrar()}{borrar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Guia\+\_\+\+Tlf\+::borrar (\begin{DoxyParamCaption}\item[{const string \&}]{nombre,  }\item[{const string \&}]{tlf }\end{DoxyParamCaption})}
+
+
+
+Borrar un telefono. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre} & nombre que se quiere borrar y telefono asociado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+\+: esta funcion nos permite borrar solamente aquel que coincida en nombre y tlf 
+\end{DoxyNote}
+
+
+Definición en la línea 76 del archivo guiatlf.\+cpp.
+
+
+\begin{DoxyCode}
+77 \{
+78     map<string, string>::iterator itlow = datos.lower\_bound(nombre);   \textcolor{comment}{//el primero que tiene dicho nombre}
+79     map<string, string>::iterator itupper = datos.upper\_bound(nombre); \textcolor{comment}{//el primero que ya no tiene dicho
+       nombre}
+80     map<string, string>::iterator it;
+81     \textcolor{keywordtype}{bool} salir = \textcolor{keyword}{false};
+82     \textcolor{keywordflow}{for} (it = itlow; it != itupper && !salir; ++it)
+83     \{
+84         \textcolor{keywordflow}{if} (it->second == tlf)
+85         \{
+86             datos.erase(it);
+87             salir = \textcolor{keyword}{true};
+88         \}
+89     \}
+90 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classGuia__Tlf_ab6b614acc6421415f8ac37b473855243}\label{classGuia__Tlf_ab6b614acc6421415f8ac37b473855243}} 
+\index{Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}!Buscar\+\_\+contactos\+\_\+por\+\_\+debajo\+\_\+nombre@{Buscar\+\_\+contactos\+\_\+por\+\_\+debajo\+\_\+nombre}}
+\index{Buscar\+\_\+contactos\+\_\+por\+\_\+debajo\+\_\+nombre@{Buscar\+\_\+contactos\+\_\+por\+\_\+debajo\+\_\+nombre}!Guia\+\_\+\+Tlf@{Guia\+\_\+\+Tlf}}
+\subsubsection{\texorpdfstring{Buscar\+\_\+contactos\+\_\+por\+\_\+debajo\+\_\+nombre()}{Buscar\_contactos\_por\_debajo\_nombre()}}
+{\footnotesize\ttfamily \hyperlink{classGuia__Tlf}{Guia\+\_\+\+Tlf} Guia\+\_\+\+Tlf\+::\+Buscar\+\_\+contactos\+\_\+por\+\_\+debajo\+\_\+nombre (\begin{DoxyParamCaption}\item[{string}]{n1 }\end{DoxyParamCaption})}
+
+
+
+Método busca los contactos por debajo de un nombre dado (inclusive) 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n1} & nombre de un contacto \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+guia de teléfonos nueva 
+\end{DoxyReturn}
+
+
+Definición en la línea 296 del archivo guiatlf.\+cpp.
+
+
+\begin{DoxyCode}
+296                                                               \{
+297     \hyperlink{classGuia__Tlf_1_1iterator}{Guia\_Tlf::iterator} it\_n1;
+298     \hyperlink{classGuia__Tlf_1_1iterator}{Guia\_Tlf::iterator} it\_i;
+299     \textcolor{keywordtype}{bool} encuentra\_n1;
+300     \hyperlink{classGuia__Tlf}{Guia\_Tlf} guiatlf\_new;
+301 
+302     \textcolor{keywordflow}{for}(it\_i = begin(); it\_i != end() && !encuentra\_n1; ++it\_i)
+303         \textcolor{keywordflow}{if}((*it\_i).first == n1)\{
+304             it\_n1 = it\_i;
+305             encuentra\_n1 = \textcolor{keyword}{true};
+306         \}
+307 
+308    \textcolor{keywordflow}{for}(it\_i = it\_n1; it\_i != end(); ++it\_i)
+309        guiatlf\_new.\hyperlink{classGuia__Tlf_add78a6fe5e8090ad6f71bbb160b70f77}{insert}((*it\_i).first, (*it\_i).second);
+310     
+311     \textcolor{keywordflow}{if}( it\_n1 == end())
+312       guiatlf\_new.\hyperlink{classGuia__Tlf_add78a6fe5e8090ad6f71bbb160b70f77}{insert}((*it\_n1).first, (*it\_n1).second);
+313 
+314    \textcolor{keywordflow}{return} guiatlf\_new;
+315 \}
+\end{DoxyCode}
+Gráfico de llamadas para esta función\+:

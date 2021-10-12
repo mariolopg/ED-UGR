@@ -1,0 +1,13 @@
+digraph "Imagen::operator="
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node6 [label="Imagen::operator=",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Imagen::num_filas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classImagen.html#a4cb4faa04f5e2913965e43a6a65acfd1",tooltip="Consultor del numero de filas de una imagen. "];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Imagen::num_columnas",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classImagen.html#ac28d55c18064aea2a65e6fcf51d86191",tooltip="Consultor del numero de columnas de una imagen. "];
+  Node6 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Imagen::valor_pixel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classImagen.html#a7d9378695a7fd2dce8092f180e716229",tooltip="Consultar el valor de luminosidad de la casilla (fila, col) de la imagen. "];
+}

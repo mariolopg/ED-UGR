@@ -1,0 +1,9 @@
+digraph "Guia_Tlf::Buscar_contactos_por_letra"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node4 [label="Guia_Tlf::Buscar_contactos\l_por_letra",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Guia_Tlf::insert",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGuia__Tlf.html#add78a6fe5e8090ad6f71bbb160b70f77",tooltip="Insert un nuevo telefono. "];
+}

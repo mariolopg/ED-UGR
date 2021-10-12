@@ -1,0 +1,168 @@
+
+
+*******************************************************************************
+Wed Dec 30 19:34:56 2020
+
+
+FIT:    data read from "tiempos_borrado_set.dat"
+        format = z
+        #datapoints = 600
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*log(x)+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 3.9330861288e+10   0.00e+00  8.27e+00    1.000000e+00   1.000000e+00
+   4 7.5890138646e+09  -1.84e-04  8.27e-04    1.338316e+03  -8.381604e+03
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 7.58901e+09
+rel. change during last iteration : -1.84348e-09
+
+degrees of freedom    (FIT_NDF)                        : 598
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3562.4
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.26907e+07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1338.32          +/- 148.7        (11.11%)
+b               = -8381.6          +/- 1734         (20.68%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.996  1.000 
+
+
+*******************************************************************************
+Wed Dec 30 19:46:39 2020
+
+
+FIT:    data read from "tiempos_borrado_unordered_set.dat"
+        format = z
+        #datapoints = 600
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 3.2319831590e+19   0.00e+00  2.32e+08    1.338316e+03
+   3 2.3645887088e+10  -1.05e-01  2.32e+05    9.263100e-03
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 2.36459e+10
+rel. change during last iteration : -1.05111e-06
+
+degrees of freedom    (FIT_NDF)                        : 599
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6282.96
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.94756e+07
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.0092631        +/- 0.001479     (15.97%)
+
+
+*******************************************************************************
+Wed Dec 30 19:49:54 2020
+
+
+FIT:    data read from "tiempos_borrado_vector.dat"
+        format = z
+        #datapoints = 600
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 4.0017106041e+12   0.00e+00  1.61e+03    9.263100e-03
+   2 1.4918695388e+12  -4.66e-01  1.61e+01    3.822077e-01
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 1.49187e+12
+rel. change during last iteration : -4.65765e-06
+
+degrees of freedom    (FIT_NDF)                        : 599
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 49905.9
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.4906e+09
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.382208         +/- 0.01175      (3.074%)
+
+
+*******************************************************************************
+Wed Dec 30 19:49:59 2020
+
+
+FIT:    data read from "tiempos_borrado_vector.dat"
+        format = z
+        #datapoints = 600
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.4918695388e+12   0.00e+00  4.72e+04    3.822077e-01  -8.381604e+03
+   2 1.4917907067e+12  -1.65e-01  4.72e+02    3.785829e-01  -7.656026e+03
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 1.49179e+12
+rel. change during last iteration : -1.65317e-06
+
+degrees of freedom    (FIT_NDF)                        : 598
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 49946.3
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.49463e+09
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.378583         +/- 0.02354      (6.219%)
+b               = -7656.03         +/- 4083         (53.33%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.866  1.000 
+
+
+*******************************************************************************
+Wed Dec 30 19:51:52 2020
+
+
+FIT:    data read from "tiempos_borrado_list.dat"
+        format = z
+        #datapoints = 600
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 9.9914565753e+13   0.00e+00  4.67e+04    3.785829e-01  -7.656026e+03
+   3 1.9573435004e+13  -7.94e-05  4.67e+01    2.365158e+00   1.682134e+04
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 1.95734e+13
+rel. change during last iteration : -7.94164e-10
+
+degrees of freedom    (FIT_NDF)                        : 598
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 180918
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.27315e+10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 2.36516          +/- 0.08529      (3.606%)
+b               = 16821.3          +/- 1.479e+04    (87.93%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.866  1.000 
